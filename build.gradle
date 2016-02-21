@@ -1,0 +1,19 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+
+  dependencies {
+    classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2'
+
+    // optional, if you use asciidoctor markup
+    classpath 'org.pegdown:pegdown:1.4.2'
+    classpath 'org.freemarker:freemarker:2.3.19'
+    classpath 'org.ajoberstar:gradle-git:0.11.1'
+  }
+}
+apply plugin: 'me.champeau.jbake'
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.10'
+}

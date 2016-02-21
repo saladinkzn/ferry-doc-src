@@ -1,0 +1,13 @@
+apply plugin: 'org.ajoberstar.github-pages'
+
+githubPages {
+    repoUri = 'git@github.com:saladinkzn/ferry'
+    targetBranch = 'gh-pages'
+    pages {
+        from(file('build/jbake')) {
+            into '.'
+        }
+    }
+}
+
+project.tasks.publishGhPages.dependsOn project.tasks.jbake
