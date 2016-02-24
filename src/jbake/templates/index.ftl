@@ -13,4 +13,4 @@
     <hr />
 </#macro>
 
-<@template title="Sala Blog. Blog about git, Java, Gradle and other stuff" body=body/>
+<@template title="Ferry documentation" body=body/>

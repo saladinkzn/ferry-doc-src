@@ -1,5 +1,5 @@
-<#macro template body title="Sala Blog">
-<#assign styles=["css/bootstrap.min.css","css/asciidoctor.css","css/base.css","css/prettify.css"]/>
+<#macro template body title="Ferry documentation">
+<#assign styles=["css/bootstrap.min.css", "css/bootstrap-theme.min.css"]/>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     <link rel="shortcut icon" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>favicon.ico">
 </head>
-<body onload="prettyPrint()">
+<body>
 <div id="wrap">
     <#include "../common/navbar.ftl"/>
     <div class="container">
@@ -41,16 +41,15 @@
 
 <div id="footer">
     <div class="container">
-        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake ${version}</a></p>
+        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.3.6</a> | Baked with <a href="http://jbake.org">JBake ${version}</a></p>
     </div>
 </div>
 
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/jquery-1.11.1.min.js"></script>
+<script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/jquery-2.2.1.min.js"></script>
 <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/bootstrap.min.js"></script>
-<script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/prettify.js"></script>
 
 </body>
 </html>
